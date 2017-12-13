@@ -1,12 +1,11 @@
 \documentclass{article}
     \usepackage{CJKutf8}
-    % \usepackage{fontspec}
-        % \setmainfont{Simsun}
     \author{Group 4}
-    \title{Analysis on IMDB Database}
+    \title{Analysis on IMDb Database}
     \begin{document}
     \begin{CJK}{UTF8}{gbsn}
         \maketitle
+        \tableofcontents
         \section{Group Information}
         \begin{tabular} {|c|c|c|}
             \hline
@@ -23,5 +22,39 @@
             Bill & 钟钧儒 & 1430003045 \\
             \hline
         \end{tabular}
+        \section{Project Introduction}
+        In this section, information of the project will be introduced.
+            \subsection{Project Title}
+            Analysis on IMDb Database.
+            \subsection{Goals}
+            By analyzing the dataset from the IMDb, find some associations between columns, classcify movies according to some criterias.
+        \section{Data \& Data Collections}
+        In this section, information of the dataset used in this project will be introduced.
+            \subsection{Dataset}
+            Here are some information of the dataset itself.
+            \begin{itemize}
+                \item Formate: csv file.
+                \item Size: 302KB
+                \item Number of rows: 1000
+                \item Number of columns: 12
+                \begin{itemize}
+                    \item Rank
+                    \item Title
+                    \item Genre
+                    \item Description
+                    \item Director
+                    \item Actors
+                    \item Year
+                    \item Runtime
+                    \item Rating
+                    \item Votes
+                    \item Revenue
+                    \item Metascore
+                \end{itemize}
+                \item Source: IMDb (https://www.imdb.com)
+            \end{itemize}
+            \subsection{Data Collection}
+            \paragraph{Internet Spider}
+            The most common way to collect such dataset is to use Internet spiders. In this case, a Python packge called Scarpy was used. 
     \end{CJK}
     \end{document}
