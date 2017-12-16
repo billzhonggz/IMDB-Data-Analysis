@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[10pt]{article}
     \usepackage{CJKutf8}
     \author{Group 4}
     \title{Analysis on IMDb Database}
@@ -56,5 +56,29 @@
             \subsection{Data Collection}
             \paragraph{Internet Spider}
             The most common way to collect such dataset is to use Internet spiders. In this case, a Python packge called Scarpy was used. 
+        \section{Analysis}
+        Raised by members in the group, attributes are analyzed by members individually.
+            \subsection{Analysis on Directors}
+            The section is provided by Junru (Bill) Zhong.
+            This analysis aims to find out the following associations.
+            \begin{itemize}
+                \item Find out which director earned the largest revenue.
+                \item Find out the gerene of films of the first three directors with the largest revenue.
+                \item Estimate how much they will earn for their next film.
+            \end{itemize}
+                \subsubsection{Code implementation}
+                In this section, Python (Anaconda) was used, with package Pandas.
+                \\
+                The steps are listed below.
+                \begin{enumerate}
+                    \item List all directors.
+                    \item Get the total revenues each directors got.
+                    \item Rank all directors by revenues got each film in average.
+                    \item List information of directed film(s) of the top-3 directors.
+                    \item Estimate the revenues of their next film by some algorithms.
+                \end{enumerate}
+            \subsection{Revenue and Genre}
+            This section is provided by Yongsheng (Jeff) Fu.
+            This analysis is to find out the change in taste of genre from 2006 to 2016.
     \end{CJK}
     \end{document}
